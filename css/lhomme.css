@@ -1,0 +1,179 @@
+@charset "utf-8";
+@import url(css/animate.css);
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-image: url(../graphics/bg.jpg);
+    background-color: 	#f8b195;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /*PRELOADER*/
+  #preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%; /*ensure gif used is squared*/
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: #fff; /*mask that appears before the webpage load, shd make similar colour to gif bg*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden; }
+
+
+    /*NAVBAR*/
+.navbar{
+    background-color: #fff;
+}
+
+.navbar a{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #355c7d;
+}
+
+/*body*/
+
+/*first row*/
+
+.container-1{
+    margin-top:100px;
+}
+
+#productcarousel{
+    margin-top: 40px;
+}
+
+
+.container-1 h1,h2 {
+    color: #355c7d;
+    font-weight: bolder;
+    letter-spacing: 2;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+
+.container-1 p {
+    line-height: 1.5;
+    font-family: Helvetica, sans-serif;
+    text-align: center;
+}
+
+/* Style buttons */
+.container-1 .btn {
+    margin-top: 5px;
+    background-color:#355c7d; 
+    border: none; 
+    color: white; 
+    padding: 6px 10px; /* Some padding */
+    font-size: 20px; /* Set a font size */
+    border-radius: 55%;
+    cursor: pointer; /* Mouse pointer on hover */
+  }
+  
+
+  .btn:hover {
+    background-color: #355c7d;
+    opacity: 0.5;
+  }
+
+
+/*scent profile*/
+#title h1{
+         color: #355c7d;
+        margin-top:80px;
+        margin-left: 70px;
+        font-family:  Helvetica, sans-serif;
+        font-size: 90px;
+        font-weight: bolder;
+
+}
+
+/*form*/
+form{
+    width:30%;
+    margin: auto;
+    padding: 10px;
+}
+
+label{
+    color: #355c7d;
+    font-weight: bold;
+    font-family: Helvetica, sans-serif;
+}
+
+/*CONTACT aka the footer*/
+footer{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.social-text{
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+
+            /*SOCIAL MEDIA ICONS*/
+            .social-media{
+                margin-top: -15px;
+               margin-left:10px;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 1.875rem;
+                width: 70px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            /* Add a hover effect if you want */
+            .fa:hover {
+                opacity: 0.7;
+                text-decoration: none;
+                color: white;
+            }
+
+            /* Set a specific color for each brand */
+
+            /* Facebook */
+            .fa-facebook {
+                background:  #3B5998;
+                color: white;
+            }
+
+            /*INSTAGRAM*/  
+            .fa-instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            color: white;
+            }
+
+            /* Twitter */
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
