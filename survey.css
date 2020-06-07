@@ -1,0 +1,131 @@
+@charset "utf-8";
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-image: url(../graphics/bg.jpg);
+    background-color: 	#f8b195;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+
+
+  /*PRELOADER*/
+  #preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%; /*ensure gif used is squared*/
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: #fff; /*mask that appears before the webpage load, shd make similar colour to gif bg*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden; }
+
+
+/*scroll indicator*/
+/* Style the header: fixed position (always stay at the top) */
+.header {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+    background-color: #f1f1f1;
+    margin-bottom: 5em;
+  }
+  
+  /* The progress container (grey background) */
+  .progress-container {
+    width: 100%;
+    height: 8px;
+    background: #ccc;
+  }
+  
+  /* The progress bar (scroll indicator) */
+  .progress-bar {
+    position: absolute;
+    height: 8px;
+    background: #f67820;
+    width: 0%;
+  }
+
+   /*NAVBAR*/
+.navbar{
+    background-color: #fff;
+}
+
+.navbar a{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #355c7d;
+}
+
+
+/*FORM*/
+
+#main {
+width: 80%;
+max-width: 950px;
+border: 1px gray solid;
+margin: auto;
+padding: 10px;
+background-color: white;
+border-radius: 10px;
+}
+
+#header {
+margin: 30px;
+border: 2px solid #355c7d;
+padding: 60px;
+height: 250px;
+background: beige;
+color: #355c7d;
+}
+
+#header > h1{
+  font-size: 65px;
+}
+
+label {
+display: block;
+}
+
+input {
+width: 30px;
+margin-left: 20px;
+}
+
+h2 {
+clear: both;
+padding-top: 20px;
+}
+
+.name, .age > h2 {
+    margin-left:0.5em;
+}
+.name, .age, .email> .form-group{
+    margin-left: -1.1em;
+    width: 50%;
+}
+
+/*collapse*/
+.collapse{
+  margin:30px;
+}
+

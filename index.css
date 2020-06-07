@@ -1,0 +1,272 @@
+@charset "utf-8";
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    background-image: url(../graphics/bg.jpg);
+    background-color: 	#f8b195;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  /*PRELOADER*/
+  #preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%; /*ensure gif used is squared*/
+    z-index: 9999999;
+    top: 0;
+    left: 0;
+    background-color: #fff; /*mask that appears before the webpage load, shd make similar colour to gif bg*/
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    overflow: hidden; }
+
+    /*carousel*/
+    #carousel1{
+        margin-top: 100px;
+        width: 60%;
+        margin: 30px auto;
+    
+    }
+    .carousel-inner > .carousel-item > img {
+        width: 100%;
+      }
+
+
+
+
+
+  /*NAVBAR*/
+.navbar{
+    background-color: #fff;
+}
+
+.navbar a{
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #355c7d;
+}
+
+
+/*TITLE*/
+#title h1{
+    margin-right:150px;
+    font-size:6.25rem;
+    letter-spacing: 20px;
+    text-align: right;
+    font-family: Helvetica, sans-serif;
+    font-weight: bolder;
+    color: #355c7d;
+}
+
+  /*DESIGNERS*/
+ 
+ /* Container needed to position the overlay. Adjust the width as needed */
+.container {
+    position: relative;
+    width: 100%;
+  }
+  
+  /* Make the image to responsive */
+  .image {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* The overlay effect (full height and width) - lays on top of the container and over the image */
+  .overlay {
+    position: absolute;
+    background-color: #fff;
+    opacity:0.9;
+    overflow: hidden;
+    width: 90%;
+    height: 90%;
+    transform: scale(0);
+    transition: .3s ease;
+  }
+  
+  /* When you mouse over the container, the overlay text will "zoom" in display */
+  .container .media:hover .overlay {
+    transform: scale(1);
+  }
+  
+  /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+  .text {
+    color: #355c7d;
+    font-family: Helvetica, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    position: absolute;
+    line-height: 40px;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+
+/*about*/
+/*WHO*/
+.who-left > img{
+    border-radius: 55%;
+}
+
+.who-right {
+    margin-top:80px;
+    margin-left: 70px;
+    font-family:  Helvetica, sans-serif;
+}
+
+
+.who-right > h1{
+    white-space: nowrap;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.who-right > h4,h6{
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+   
+
+/*WHAT*/
+.what-left h1{                   /*the 'about' word*/
+        margin-top: -20px;
+           width:5px;
+           word-wrap: break-word;
+           white-space:pre-wrap; 
+           font-family:  Helvetica, sans-serif;
+           color:white;
+           letter-spacing: 0;
+           font-size:3.125rem;
+           font-weight: bolder;
+}
+
+@media screen and (max-width: 650px) {   /*make it disappear on small screenss*/
+    .what-left h1 {
+      visibility: hidden;
+      clear: both;
+      float: left;
+      margin: 10px auto 5px 20px;
+      width: 28%;
+      display: none;
+    }
+}
+
+.what-middle, .what-right{   /*leave a space between who and what looks neater */
+    margin-top: 150px;
+    font-family:  Helvetica, sans-serif;
+}
+
+.what-middle > h1{
+    white-space: nowrap;
+    font-size: 5rem;
+    font-weight: bolder;
+}
+
+.what-middle > h2,h4,p{
+    margin-left:10px;
+    font-weight: bold;
+}
+
+.what-right{  /*the counter*/
+    margin-left: 110px;
+    margin-top: 200px;
+    font-weight: bolder;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 1em;
+    line-height: 0.2em;
+
+}
+.what-right > h3{
+    display: inline-block;
+    text-align: center;
+    
+}
+
+.counter-value
+{
+    font-size: 4.375rem;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+    line-height: 92px;
+    width: 92px;
+    height: 92px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: inline-block;
+}
+
+/*CONTACT aka the footer*/
+footer{
+    background-color: white;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+.social-text{
+    margin-top: 10px;
+    margin-left: 60px;
+    font-weight: bolder;
+}
+
+            /*SOCIAL MEDIA ICONS*/
+            .social-media{
+                margin-top: -15px;
+               margin-left:10px;
+            }
+
+            .fa {
+                padding: 20px;
+                font-size: 1.875rem;
+                width: 70px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 50%;
+            }
+
+            /* Add a hover effect if you want */
+            .fa:hover {
+                opacity: 0.7;
+                text-decoration: none;
+                color: white;
+            }
+
+            /* Set a specific color for each brand */
+
+            /* Facebook */
+            .fa-facebook {
+                background:  #3B5998;
+                color: white;
+            }
+
+            /*INSTAGRAM*/  
+            .fa-instagram {
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
+            color: white;
+            }
+
+            /* Twitter */
+            .fa-twitter {
+            background: #55ACEE;
+            color: white;
+            }
